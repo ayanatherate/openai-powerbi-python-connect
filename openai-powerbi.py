@@ -6,8 +6,9 @@ This is a temporary script file.
 """
 
 import openai
+import os
 
-openai.api_key = "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"
+openai.api_key = os.environ["API_KEY"]
 model_engine = "text-davinci-002"
 
 prompt = 'Write a DAX query for capitalizing Strings'
